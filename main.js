@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (checkbox.checked) {
                 cards[index].classList.add('hidden');
                 cards[index].classList.remove('visible');
+                checkbox.checked = false; // Uncheck the checkbox
             }
         });
     };
@@ -28,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[index].classList.remove('visible');
             }
         });
+
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false; // Uncheck all checkboxes
+        });
     };
 
     // Function to view all cards
@@ -35,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             card.classList.add('visible');
             card.classList.remove('hidden');
+        });
+
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false; // Uncheck all checkboxes
         });
     };
 

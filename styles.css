@@ -4,7 +4,7 @@
 }
 
 .main{
-    background-color: #ccc;
+    box-shadow: 1px 1px 2px 1px green;
     width: 52.8vw;
     margin-left: 15rem;
     margin-top: 7rem;
@@ -60,7 +60,7 @@ img{
     height: 4rem;
 }
 .action-box{
-    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 1px #6200ff;
     margin-top: 15px;
     border-radius: 5px;
     padding: 20px;
@@ -73,6 +73,7 @@ img{
     font-size: large;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    box-shadow: 1px 1px #aaa;
 }
 .action:hover{
     text-decoration: underline 2px blueviolet;
